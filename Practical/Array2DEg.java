@@ -3,7 +3,7 @@ package Pooja;
 public class Array2DEg {
 
 	public static void main(String[] args) {
-// declaring & inintializing 2D array
+// declaring & initialization 2D array
 		
 		int arr[][] = {{1,2,3},{4,5,6},{7,8,9}}; //3*3 matrix
 		
