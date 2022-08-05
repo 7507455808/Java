@@ -1,31 +1,21 @@
-package Pooja;
+package CollectionEg;
 
 public class Employee {
-
+	
 	int empId;
 	String empName;
+	long empPhone;
+	int deptId;
 	
-	Employee(int id, String name){
-		
-		empId=id;
-		empName=name;
-				
-	}
-	void info() {
-	System.out.println("Id:"+empId+"Name:"+empName);
-	}
-	
-	
-	
-	public static void main(String[] args) {
-		Employee obj1=new Employee(100,"Jack");
-		Employee obj2=new Employee(109,"John");
-		obj1.info();
-		obj2.info();
+	public Employee(int empId, String empName, long empPhone, int deptId) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empPhone =empPhone;
+		this.deptId = deptId;
 		
 
 
-			
 	}
 
 }
