@@ -1,16 +1,18 @@
-package com.tpc.entity;
+package com.tps.entity;
 
 import jakarta.persistence.*;
 
 @Entity
-@AttributeOverrides({
-	@AttributeOverride(name="id",column = @Column(name="id")),
-	@AttributeOverride(name="sname",column = @Column(name="sname")),
-	@AttributeOverride(name="edu",column = @Column(name="edu")),
-	@AttributeOverride(name="phone",column = @Column(name="phone")),
-	@AttributeOverride(name="caste",column = @Column(name="caste")),
-})
-@DiscriminatorValue(value="No Discount")
+@PrimaryKeyJoinColumn(name="sid")
+//@AttributeOverrides({
+	//@AttributeOverride(name="id",column = @Column(name="id")),
+	//@AttributeOverride(name="sname",column = @Column(name="sname")),
+	//@AttributeOverride(name="edu",column = @Column(name="edu")),
+	//@AttributeOverride(name="phone",column = @Column(name="phone")),
+	//@AttributeOverride(name="caste",column = @Column(name="caste")),
+//})
+
+//@DiscriminatorValue(value="No Discount")
 
 public class FeesNoDiscount extends Student {
 

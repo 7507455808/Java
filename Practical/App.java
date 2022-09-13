@@ -1,4 +1,4 @@
-package com.tpc;
+package com.tps;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -6,8 +6,8 @@ import org.hibernate.SessionFactory;
 import jakarta.transaction.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.tpc.entity.FeesDiscount;
-import com.tpc.entity.FeesNoDiscount;
+import com.tps.entity.FeesDiscount;
+import com.tps.entity.FeesNoDiscount;
 
 
 
@@ -28,7 +28,7 @@ public class App
     	fnd.setCourse("Java");
     	
     	FeesDiscount fd = new FeesDiscount();
-    	fd.setSname("Pallavi");
+    	fd.setSname("Prem");
     	fd.setEdu("EECS");
     	fd.setPhone(980654321);
     	fd.setCaste("SBC");

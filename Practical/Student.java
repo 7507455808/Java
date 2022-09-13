@@ -1,15 +1,15 @@
-package com.tpc.entity;
+package com.tps.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 //@DiscriminatorColumn(name="type", discriminatorType = DiscriminatorType.STRING)
 //@DiscriminatorValue(value="Student")
 
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int sid;
 	
 	@Column(length = 20, nullable = false)
 	private String sname;
@@ -22,10 +22,10 @@ public class Student {
 	@Column(length = 10, nullable = false)
 	private String caste;
 	public int getId() {
-		return id;
+		return sid;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.sid = sid;
 	}
 	public String getSname() {
 		return sname;
