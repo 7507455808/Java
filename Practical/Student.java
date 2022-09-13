@@ -1,11 +1,10 @@
-package com.tph.entity;
+package com.tpc.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="studentdetails")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="type", discriminatorType = DiscriminatorType.STRING)
-@DiscriminatorValue(value="Student")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+//@DiscriminatorColumn(name="type", discriminatorType = DiscriminatorType.STRING)
+//@DiscriminatorValue(value="Student")
 
 public class Student {
 	@Id
