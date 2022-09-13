@@ -12,6 +12,8 @@
 <property name="hbm2ddl.auto">update</property>
 <property name="show_sql">true</property>
 
-<mapping class="com.jpaeg.Employee"/>
+<mapping class="com.tpc.entity.Student"/>
+<mapping class="com.tpc.entity.FeesDiscount"/>
+<mapping class="com.tpc.entity.FeesNoDiscount"/>
 </session-factory>
 </hibernate-configuration>
