@@ -12,8 +12,7 @@
 <property name="hbm2ddl.auto">update</property>
 <property name="show_sql">true</property>
 
-<mapping class="com.tps.entity.Student"/>
-<mapping class="com.tps.entity.FeesDiscount"/>
-<mapping class="com.tps.entity.FeesNoDiscount"/>
+<mapping class="com.HbOnetoOneBi.Entity.Employee"/>
+<mapping class="com.HbOnetoOneBi.Entity.Address"/>
 </session-factory>
 </hibernate-configuration>

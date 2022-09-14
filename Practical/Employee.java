@@ -1,67 +1,81 @@
-package com.jpaeg;
+package com.HbOnetoOneBi.Entity;
 
 import jakarta.persistence.*;
 
-@Table(name="empdetails")
 @Entity
 
 public class Employee {
-	
 	@Id
-	private int id;
+	@PrimaryKeyJoinColumn
 	
-	@Column(name="fname", length = 30, nullable = false)	
-	private String fname;
+	private int eid;
+	@Column(length=30, nullable = false)
 	
-	@Column(name= "lname", length = 30, nullable = false)
-	private String lname;
+	private String ename;
+	@Column(length = 10, nullable = false)
 	
-	@Column(name="email", length = 30, unique = true)	
-	private String email;
+	private String dept;
+	@Column(length = 30, nullable = false)
 	
-	@Column(name="phone", length = 11, nullable = false, unique = true)
-	private long phone;
+	private String profile;
+	@Column(length = 11, nullable = false, unique = true)
 	
-	@Column(name="designation", length = 10)
-	private String designation;
+	private long ephone;
 	
 	
-	public int getId() {
-		return id;
+	@OneToOne(targetEntity = Address.class, cascade = CascadeType.ALL)
+	private Address address;
+
+	public int getEid() {
+		return eid;
 	}
-	public void setId(int id) {
-		this.id = id;
+
+	public void setEid(int eid) {
+		this.eid = eid;
 	}
-	public String getFname() {
-		return fname;
+
+	public String getEname() {
+		return ename;
 	}
-	public void setFname(String fname) {
-		this.fname = fname;
+
+	public void setEname(String ename) {
+		this.ename = ename;
 	}
-	public String getLname() {
-		return lname;
+
+	public String getDept() {
+		return dept;
 	}
-	public void setLname(String lname) {
-		this.lname = lname;
+
+	public void setDept(String dept) {
+		this.dept = dept;
 	}
-	public String getEmail() {
-		return email;
+
+	public String getProfile() {
+		return profile;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+	public void setProfile(String profile) {
+		this.profile = profile;
 	}
-	public long getPhone() {
-		return phone;
+
+	public long getEphone() {
+		return ephone;
 	}
-	public void setPhone(long phone) {
-		this.phone = phone;
+
+	public void setEphone(long ephone) {
+		this.ephone = ephone;
 	}
-	public String getDesignation() {
-		return designation;
+
+	public Address getAddress() {
+		return address;
 	}
-	public void setDesignation(String designation) {
-		this.designation = designation;
-	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	} //has a relationship
+	
+	
+	
 	
 	
 
