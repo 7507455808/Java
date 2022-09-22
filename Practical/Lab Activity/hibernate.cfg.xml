@@ -12,7 +12,7 @@
 <property name="hbm2ddl.auto">update</property>
 <property name="show_sql">true</property>
 
-<mapping class="com.HbOnetoManyUni.Entity.Trainer"/>
-<mapping class="com.HbOnetoManyUni.Entity.Student"/>
+<mapping class="com.sprint1.entity.Customer"/>
+<mapping class="com.sprint1.entity.Orders"/>
 </session-factory>
 </hibernate-configuration>
