@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+<head>
+<title>Example</title>
+<style>
+body{
+margin : 10px;
+border : 2px solid green;
+padding : 15px;
+background-color : #ffe6e6;
+}
+h1{
+text-align : center;
+color : red;
+font-family : algerian;
+text-decoration : underline 10px dotted #e6e600;
+font-size : 40px;
+font-style : italic;
+}
+label{
+color : blue;
+font-size : 25px;
+font-weight : bold;
+}
+input[type]{
+border : 1px solid black;
+padding : 10px;
+}
+input[type] : focus{
+background-color : lightblue;
+}
+input[type = submit],input[type = reset]{
+color : #ff0066;
+font-size : 20px;
+}
+select{
+width : 13%;
+padding : 10px;
+border : 2px solid black;
+border-radius : 5px;
+}
+textarea{
+width : 20%;
+height : 100px;
+border : 2px solid black;
+border-radius : 5px;
+}
+</style>
+</head>
+<body>
+<h1>Student Registration </h1>
+<form>
+<label>FirstName :</lable>
+<input type="text" name="" value="" placeholder="enter name" required />
+<br><br>
+<label>LastName :</label>
+<input type="text" name="" value="" placeholder="enter surname" required />
+<br><br>
+<label>Phone No : </label>
+<input type="phone" name="" value="" placeholder="enter phone no " pattern="[6-9]{1}[0-9]{9}"  required />
+<br><br>
+<label>Email ID :</label>
+<input type="email" name="" value="" placeholder="enter email id" required />
+<br><br>
+<label>Password : </label>
+<input type="password" name="" value="" placeholder="enter password" required />
+<br><br>
+<label>Birth date :</label>
+<input type="date" name="" value="" />
+<br><br>
+<label>Gender</label>
+<input type="radio" name="gender" value="Male" />MALE
+<input type="radio" name="gender" value="FeMale" />FEMALE
+<input type="radio" name="gender" value="Others" />OTHERS
+<br><br>
+<label>Qualification :</label>
+<input type="Checkbox" name="" value="" />HSC
+<input type="Checkbox" name="" value="" />BSC
+<input type="Checkbox" name="" value="" />BE
+<input type="Checkbox" name="" value="" />BTECH
+<input type="Checkbox" name="" value="" />MASTER
+<br><br>
+<label>Doc Upload:</label>
+<input type="file" name="" required />
+<br><br>
+<label>Red.Adress :</label>
+<textarea rows="5" cols="20"></textarea>
+<br><br>
+<label> State :</label>
+<select>
+<option>Choose State </option>
+<option>MH</option>
+<option>AnP</option>
+<option>HP</option>
+<option>MP</option>
+<option>ArP</option>
+<option>Kerala</option>
+<option>Delhi</option>
+<option>Gujrat</option>
+<option>Rajasthan</option>
+</select>
+<br><br>
+<input type="submit" value="REGISTER" />
+<input type="reset" value="CLEAR ME" />
+</form>
+</body>
+</html>
