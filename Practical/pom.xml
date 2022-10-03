@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com</groupId>
-  <artifactId>HbOnetoOneBi</artifactId>
+  <groupId>com.anudip</groupId>
+  <artifactId>SpringExample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>HbOnetoOneBi</name>
+  <name>SpringExample</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,16 +15,24 @@
   </properties>
 
   <dependencies>
-   <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.28</version>
+  <dependency>
+
+<groupId>org.springframework</groupId>
+
+<artifactId>spring-core</artifactId>
+
+<version>5.3.20</version>
+
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org .springframework/spring-context -->
+
 <dependency>
-    <groupId>org.hibernate.orm</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>6.0.2.Final</version>
+
+<groupId>org.springframework</groupId>
+
+<artifactId>spring-context</artifactId> <version>5.3.22</version>
+
 </dependency>
     <dependency>
       <groupId>junit</groupId>
